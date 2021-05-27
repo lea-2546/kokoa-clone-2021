@@ -1,0 +1,25 @@
+.badge {
+  background-color: red;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
+.badge_dot {
+  color: red;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.badge_dot__point {
+  position: absolute;
+  top: 45px;
+  right: 20px;
+}

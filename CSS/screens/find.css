@@ -1,0 +1,109 @@
+.recommended-friends {
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+  padding: 25px 0px;
+  margin: 25px 0px;
+}
+.recommended-friends__title {
+  font-size: 14px;
+  color: var(--main-font-color);
+}
+.recommended-friends span {
+  font-size: 18px;
+  color: var(--main-font-color);
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px;
+}
+.open-chat {
+  overflow-y: scroll;
+}
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--main-font-color);
+  margin-bottom: 25px;
+}
+.open-chat__header h4 {
+  color: rgba(0, 0, 0, 0.7);
+}
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.open-chat__title {
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.open-chat__hashtag {
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+.open-chat__members {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+}
+.open-post img {
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+.open-post__member-count {
+  opacity: 0.5;
+  font-size: 14px;
+}
+.open-chat__members .dividers {
+  width: 2px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 10px;
+}
+.open-post__member-status {
+  color: rgb(255, 140, 255);
+}
+.open-post__photo {
+  position: relative;
+}
+
+.open-post__photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+.open-post__heart-count {
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.2px;
+  color: white;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+}
+.open-post__heart-count span {
+  margin-left: 5px;
+}
+@keyframes heart-countBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heart-countBeat 1s linear infinite;
+}
