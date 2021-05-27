@@ -5,10 +5,15 @@
   width: 100vw;
   background-color: var(--yellow);
   display: flex;
-  top: 0;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 32px;
+  top: 0;
+}
+#no-mobile i {
+  font-size: 180px;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 645px) {
   #no-mobile {

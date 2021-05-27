@@ -14,6 +14,26 @@
   border-radius: 40%;
   margin-right: 20px;
 }
+.user-component__avatar--small {
+  width: 50px;
+  height: 50px;
+  border-radius: 40%;
+  margin-right: 20px;
+}
+#join {
+  position: relative;
+}
+.join-two {
+  position: absolute;
+  top: -8px;
+  left: 0px;
+}
+.join-one {
+  position: relative;
+  top: 12px;
+  left: 22px;
+}
+
 .user-component__title {
   font-weight: 600;
   font-size: 20px;
@@ -23,6 +43,10 @@
   color: rgba(0, 0, 0, 0.5);
   font-size: 17px;
 }
+.user-component__title-second,
+.user-component__subtitle-second {
+  margin-left: 20px;
+}
 .user-component__avatar--xl {
   width: 80px;
   height: 80px;
@@ -31,6 +55,7 @@
   width: 60px;
   height: 60px;
 }
+
 .user-component__title--not-bold {
   font-weight: 400;
 }
